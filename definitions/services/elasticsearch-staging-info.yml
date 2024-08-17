@@ -3,12 +3,12 @@ kind: Component
 metadata:
   name: elasticsearch-canary
   description: |
-   New Description
+   Canary :)
   annotations:
     github.com/project-slug: backstage/backstage
     backstage.io/techdocs-ref: dir:.
     lighthouse.com/website-url: https://rootly.com
-    rootly.com/service-slug: elasticsearch-staging
+    rootly.com/service-slug: elasticsearch-canary
     rootly.com/service-auto-import: enabled
 spec:
   type: service
