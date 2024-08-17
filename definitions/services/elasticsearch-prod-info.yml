@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: elasticsearch-prod
+  description: |
+   elasticsearch-prod
+  annotations:
+    github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://rootly.com
+    rootly.com/service-slug: elasticsearch-prod
+    rootly.com/service-auto-import: enabled
+spec:
+  type: service
+  owner: guests
+  lifecycle: experimental

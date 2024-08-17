@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: Infrastructure
+  description: |
+   Infrastucture
+  annotations:
+    github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: dir:.
+    lighthouse.com/website-url: https://rootly.com
+    rootly.com/team-slug: infrastructure
+    rootly.com/team-auto-import: enabled
+    pagerduty.com/service-id: PPXDDC7
+spec:
+  type: team
+  profile:
+    displayName: Infrastructure
+    email: infrastructure@example.com
+  owner: guests
+  lifecycle: experimental
+  children: []
