@@ -14,3 +14,4 @@ spec:
   type: service
   owner: guests
   lifecycle: experimental
+  system: rootly-es
