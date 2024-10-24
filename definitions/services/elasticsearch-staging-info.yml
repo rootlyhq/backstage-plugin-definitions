@@ -8,6 +8,7 @@ metadata:
     github.com/project-slug: backstage/backstage
     backstage.io/techdocs-ref: dir:.
     lighthouse.com/website-url: https://rootly.com
+    rootly.com/organization-id: rootly-sandbox
     rootly.com/service-slug: elasticsearch-staging
     rootly.com/service-auto-import: enabled
     pagerduty.com/service-id: ABCDEF
