@@ -1,0 +1,67 @@
+version: 2
+
+registries:
+  tiptap-pro:
+    type: npm-registry
+    url: https://registry.tiptap.dev
+    token: ${{secrets.TIPTAP_PRO_TOKEN}}
+    replaces-base: false
+
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 20
+    cooldown:
+      default-days: 3
+      semver-major-days: 7
+    groups:
+      minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "rubocop*"
+          - "standard*"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 20
+    cooldown:
+      default-days: 3
+      semver-major-days: 7
+    registries:
+      - tiptap-pro
+    ignore:
+      - dependency-name: "choices.js"
+      - dependency-name: "intl-tel-input"
+      - dependency-name: "tributejs"
+      - dependency-name: "@codemirror/view"
+      - dependency-name: "@codemirror/lang-html"
+      - dependency-name: "@codemirror/state"
+    groups:
+      herb:
+        applies-to: version-updates
+        patterns:
+          - "@herb-tools/*"
+      minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+        exclude-patterns:
+          - "@herb-tools/*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 20
+    cooldown:
+      default-days: 3
