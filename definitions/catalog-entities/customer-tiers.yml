@@ -1,0 +1,63 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: enterprise-tier
+  description: Enterprise customer tier
+  annotations:
+    rootly.com/organization-id: rootly-main
+    rootly.com/catalog-entity-slug: enterprise-tier
+    rootly.com/catalog-entity-auto-import: enabled
+    rootly.com/catalog-slug: customer-tier
+    rootly.com/catalog-description: Customer pricing tiers
+spec:
+  type: service
+  owner: guests
+  lifecycle: production
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: growth-tier
+  description: Growth customer tier
+  annotations:
+    rootly.com/organization-id: rootly-main
+    rootly.com/catalog-entity-slug: growth-tier
+    rootly.com/catalog-entity-auto-import: enabled
+    rootly.com/catalog-slug: customer-tier
+    rootly.com/catalog-description: Customer pricing tiers
+spec:
+  type: service
+  owner: guests
+  lifecycle: production
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: starter-tier
+  description: Starter customer tier
+  annotations:
+    rootly.com/organization-id: rootly-main
+    rootly.com/catalog-entity-slug: starter-tier
+    rootly.com/catalog-entity-auto-import: enabled
+    rootly.com/catalog-slug: customer-tier
+    rootly.com/catalog-description: Customer pricing tiers
+spec:
+  type: service
+  owner: guests
+  lifecycle: production
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: free-tier
+  description: Free customer tier
+  annotations:
+    rootly.com/organization-id: rootly-main
+    rootly.com/catalog-entity-slug: free-tier
+    rootly.com/catalog-entity-auto-import: enabled
+    rootly.com/catalog-slug: customer-tier
+    rootly.com/catalog-description: Customer pricing tiers
+spec:
+  type: service
+  owner: guests
+  lifecycle: production
