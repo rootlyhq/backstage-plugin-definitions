@@ -1,0 +1,18 @@
+{
+  "name": "rootly-backstage-plugin-definitions",
+  "private": true,
+  "description": "Example Backstage catalog definitions for the Rootly Backstage plugin",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  },
+  "devDependencies": {
+    "@backstage/catalog-model": "^1.10.1",
+    "yaml": "^2.9.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "yarn@4.13.0"
+}
