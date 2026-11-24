@@ -8,7 +8,7 @@
     "validate": "node scripts/validate.mjs"
   },
   "devDependencies": {
-    "@backstage/catalog-model": "^1.10.2",
+    "@backstage/catalog-model": "^1.10.3",
     "yaml": "^2.9.1"
   },
   "engines": {
